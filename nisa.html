@@ -1,0 +1,122 @@
+<?php
+
+    $url = file_get_contents('https://api.kawalcorona.com/indonesia');
+    $data = json_decode($url, true);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/cm1.png" alt="">
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <nav class="menu">
+
+            <div class="brand">
+                <img src="img/cm1.png" alt="">
+
+            </div>
+            <ul class="menu-list">
+                <li><a href="index.php">Home</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Other</a></li>
+                <li class="akun-logo"><a href="#"><img src="img/1.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    </section>
+    <section>
+        <h1>Blog</h1> 
+    </section>
+    
+    <div class="blog-top-header">
+        <h1>Coretan Mahasiswa</h1>
+        
+
+
+
+    </div>
+    <div class="clear"></div>
+        
+    <div class="tulisan">
+      
+           <div class="logo">
+               <a href="blog.html"><img src="img/nisa2.jpeg" alt=""></a>
+           </div> 
+           <div class="bio">
+               <pre>
+NAMA		: Fakihatunnisa Arrobi'u Watstsalatsuna  
+
+Umur		: 19 tahun 
+
+Hobby		: Segala jenis seni dan kegabutan :) 
+
+Moto		: Be yourself and make yourself better 
+
+Jurusan	        : Sistem Informasi UNTAN Pontianak 
+
+               </pre>
+           </div>
+            
+            
+           <!-- <div class="kosong"></div> -->
+        
+    </div>
+    
+    <div class="clear"></div>
+    <div class="noted">
+        <p>Catatan : Setiap coretan yg mengandung SARA atau bermaksud menyudutkan dan memprovokasi beberapa pihak tidak
+            akan di acc oleh admin. Sindirlah dengan cara cerdas dan sampaikan dengan cara yg benar!</p>
+    </div>
+    <div class="clear"></div>
+    <footer>
+
+        <div class="bot">
+            <p>Copyright &copy; Coretan Mahasiswa 2020</p>
+        </div>
+    </footer>
+
+
+    <script>
+    function openCity(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+    }
+    </script>
+
+    <script src="java/home.js">
+    //         const menuToggle = document.querySelector('.menu-toggle input');
+    // const nav = document.querySelector('nav ul');
+
+    // menuToggle.addEventListener('click', function(){
+    //     nav.classList.toggle('slide');
+    // })
+    </script>
+</body>
+
+</html>
